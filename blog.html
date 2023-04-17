@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="pr.css">
+    
+    <style>
+        @media(max-width:600px){
+            .navbar{
+                display: block;
+                height: 12rem;
+            }
+
+            .navbar .right ul{
+                display: block;
+            }
+
+            .content{
+                margin: 2rem;
+                display: inline-block;
+                height: 75vh;
+                padding: 2rem;
+                height: auto;
+            }
+
+            .content .cright img{
+                height: 8vh;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">CodeShows</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="profiles.html">Profiles</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <main class="mainb">
+        <div class="content">
+            <div class="cright">
+                <img src="imgc.jpg" alt="image">
+            </div>
+            <div class="cleft">
+                <h1>First Blog</h1>
+                <p>
+                    This is my first blog on the platform of code show .I have some anxiety about what is going to
+                    happen and how it is going to be seen by other
+                </p>
+            </div>
+            =
+        </div>
+        <div class="content">
+            <div class="cright">
+                <img src="imgc3.jpg" alt="image">
+            </div>
+            <div class="cleft">
+                <h1>Second Blog</h1>
+                <p>
+                    This is second blog of our made by Khush and It is for happiness should b e present everywhere in
+                    our world
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cright">
+                <img src="imgc2.jpg" alt="image">
+            </div>
+            <div class="cleft">
+                <h1>First Blog</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt libero, dolorem quas quam similique, modi sapiente tempore a voluptate iusto earum soluta illum laboriosam ipsum ullam sed incidunt et quis iure, rem architecto. Corporis.
+                </p>
+            </div>
+        </div>        
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <script src="pr.js"></script>
+</body>
+
+</html>

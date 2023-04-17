@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compete</title>
+  <link rel="stylesheet" href="events.css">
+  <link rel="stylesheet" href="pr.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">CodeShows</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Profiles.html">Profiles</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+<div class="poori">
+  <div class="headi">
+    <p>Hackathons</p>
+  </div>
+  <div class="mainb">
+    <div class="card">
+      <img src="logo.jpg">
+      <h3>Blitz</h3>
+      <p>
+        This is our event of blitz of our mnit jaipur ,hosted by nit
+      </p>
+      <button class="btn" id="my1" type="button" onclick="myfunc()">Click Me</button>
+    </div>
+    <div class="card">
+      <img src="logo.jpg">
+      <h3>Internit</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id in nobis magnam ducimus sit maiores cupiditate
+        suscipit? Ratione, molestiae obcaecati!
+      </p>
+      <button class="btn" id="my2" type="button" onclick="myfunc()">Click Me</button>
+    </div>
+    <div class="card">
+      <img src="logo.jpg">
+      <h3>MST</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde neque officiis hic sequi eum soluta.
+      </p>
+      <button class="btn" id="my3" type="button" onclick="myfunc()">Click Me</button>
+    </div>
+    <div class="card">
+      <img src="logo.jpg">
+      <h3>Nsut vs Mnit</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro non id eaque nemo cumque ullam, ipsum cum!
+      </p>
+      <button class="btn" id="my4" type="button" onclick="myfunc()">Click Me</button>
+    </div>
+    <div class="card">
+      <img src="logo.jpg">
+      <h3>DTU_vs_Mnit</h3>
+      <p>
+        This is our event of blitz of our mnit jaipur ,hosted by nit
+      </p>
+      <button class="btn" id="my5" type="button" onclick="myfunc()">Click Me</button>
+    </div>
+    <div class="card">
+      <img src="logo.jpg">
+      <h3>Internit*</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id in nobis magnam ducimus sit maiores cupiditate
+        suscipit? Ratione, molestiae obcaecati!
+      </p>
+      <button class="btn" id="my6" type="button" onclick="myfunc()">Click Me</button>
+    </div>
+    <div class="card">
+      <img src="logo.jpg">
+      <h3>MST_Govt.</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde neque officiis hic sequi eum soluta.
+      </p>
+      <button class="btn" id="my7" type="button" onclick="myfunc()">Click Me</button>
+    </div>
+    <div class="card">
+      <img src="logo.jpg">
+      <h3>Nit_DELHI vs Mnit</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro non id eaque nemo cumque ullam, ipsum cum!
+      </p>
+      <button class="btn" id="my8" type="button" onclick="myfunc()">Click Me</button>
+    </div>
+
+  </div>
+  </div>
+
+  <script>
+    function myfunc(e){
+      console.log("button is Clicked");
+      //alert("button is clicked");
+      const name=prompt("What is your name ?")
+      alert("You are registered for event "+name);
+    }
+
+
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+
+  <!-- Function used to shrink nav bar removing paddings and adding black background -->
+      <script>
+          $(window).scroll(function() {
+              if ($(document).scrollTop() > 50) {
+                  $('.nav').addClass('affix');
+                  console.log("OK");
+              } else {
+                  $('.nav').removeClass('affix');
+              }
+          });
+      </script>
+      <script src="pr.js"></script>
+</body>
+</html>
